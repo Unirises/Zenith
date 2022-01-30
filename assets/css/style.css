@@ -1,0 +1,86 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.background {
+    background-image: url('../img/bg/bg1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.align_bottom {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.navigation_bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.selected_nav {
+    z-index: 1000;
+}
+
+
+/* Page 1 */
+
+.confidence {
+    width: 60%;
+    margin-top: 30%;
+    margin-left: 25%;
+}
+
+.zenith {
+    width: 70%;
+}
+
+
+/* Page 2 */
+
+.efficacy_title {
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.O_I {
+    position: absolute;
+    width: 35%;
+    margin-left: -16%;
+    margin-top: -1%;
+}
+
+.C_A {
+    position: absolute;
+    width: 35%;
+    margin-left: 4%;
+    margin-top: -1%;
+}
+
+.C_A_Desc {
+    width: 65%;
+    margin-left: 21%;
+}
+
+.O_I_Desc {
+    width: 65%;
+}
+
+
+/* safety */
+
+.description_margin_safety {
+    margin-top: 10%;
+    margin-left: 5%;
+}
