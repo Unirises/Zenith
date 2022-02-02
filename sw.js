@@ -1,9 +1,9 @@
 const cacheName = 'zenith';
 const staticAssets = [
-    './',
-    './index.php',
-    './assets/css/styles.css',
-    './assets/js/zenith.js'
+    '/',
+    '/index.php',
+    '/assets/css/styles.css',
+    '/assets/js/zenith.js'
 ];
 
 self.addEventListener('install', async e => {
