@@ -12,7 +12,18 @@ const CACHE_FILES = [
     '/zenith/pages/p6.php',
     '/zenith/assets/img/bg/bg1.png',
     '/zenith/assets/img/bg/bg2.png',
-    '/zenith/assets/img/bg/bg3.png'
+    '/zenith/assets/img/bg/bg3.png',
+    '/zenith/assets/img/navigation/Dosing.png',
+    '/zenith/assets/img/navigation/Efficacy.png',
+    '/zenith/assets/img/navigation/Home.png',
+    '/zenith/assets/img/navigation/Immunomodulation.png',
+    '/zenith/assets/img/navigation/Savings.png',
+    '/zenith/assets/img/navigation/selected_dosage.png',
+    '/zenith/assets/img/navigation/selected_efficacy.png',
+    '/zenith/assets/img/navigation/selected_home.png',
+    '/zenith/assets/img/navigation/selected_immunomodulation.png',
+    '/zenith/assets/img/navigation/selected_safety.png',
+    '/zenith/assets/img/navigation/selected_savings.png'
 ];
 
 self.addEventListener('install', event => {
