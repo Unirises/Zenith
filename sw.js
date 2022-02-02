@@ -27,7 +27,7 @@ const CACHE_FILES = [
     '/zenith/assets/img/product/confidence.png',
     '/zenith/assets/img/product/uap_unilab.png',
     '/zenith/assets/img/product/zenith.png',
-    // resources
+
     '/zenith/assets/img/resources/dosage/Better_than_10_Days_Show.png',
     '/zenith/assets/img/resources/dosage/better_than_10_days.png',
     '/zenith/assets/img/resources/dosage/Co_Amoxiclav_Show.png',
