@@ -2,17 +2,17 @@ const CACHE_NAME = 'Zenith-V1';
 const CACHE_FILES = [
     '/zenith/index.php',
     '/zenith/assets/css/style.css',
-    '/zenith/assets/js/zenith.css',
+    '/zenith/assets/js/zenith.js',
     '/zenith/pages/navigation.php',
     '/zenith/pages/p1.php',
     '/zenith/pages/p2.php',
     '/zenith/pages/p3.php',
     '/zenith/pages/p4.php',
     '/zenith/pages/p5.php',
-    '/zenith/pages/p6.php'
-    // '/zenith/assets/img/bg/bg1.png',
-    // '/zenith/assets/img/bg/bg2.png',
-    // '/zenith/assets/img/bg/bg3.png'
+    '/zenith/pages/p6.php',
+    '/zenith/assets/img/bg/bg1.png',
+    '/zenith/assets/img/bg/bg2.png',
+    '/zenith/assets/img/bg/bg3.png'
 ];
 
 self.addEventListener('install', event => {
