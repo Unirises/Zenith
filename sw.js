@@ -16,3 +16,20 @@ self.addEventListener("install", event => {
         .catch(err => console.log(err))
     );
 });
+
+self.addEventListener("fetch", event => {
+    if (event.request.url === "https://medichem.online/zenith/") {
+        // or whatever your app's URL is
+        event.respondWith(
+            fetch(event.request).catch(err =>
+                self.cache.open(cache_name).then(cache => cache.match("/index.php"))
+            )
+        );
+    } else {
+        event.respondWith(
+            fetch(event.request).catch(err =>
+                caches.match(event.request).then(response => response)
+            )
+        );
+    }
+});
