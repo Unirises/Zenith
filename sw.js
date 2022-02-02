@@ -10,7 +10,7 @@ const CACHE_FILES = [
     '/zenith/pages/p4.php',
     '/zenith/pages/p5.php',
     '/zenith/pages/p6.php',
-    '/zenith/assets/'
+    '/zenith/assets/img/bg/bg1.png'
 ];
 
 self.addEventListener('install', event => {
