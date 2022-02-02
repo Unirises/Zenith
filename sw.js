@@ -1,8 +1,8 @@
 let cache_name = "SimiCart"; // The string used to identify our cache
 const ASSETS = [
-    "./zenith/assets/css/style.css",
-    "./zenith/assets/js/zenith.js",
-    "./zenith/index.php",
+    "assets/css/style.css",
+    "assets/js/zenith.js",
+    "index.php",
     "./zenith"
 ];
 self.addEventListener("install", event => {
@@ -22,7 +22,7 @@ self.addEventListener("fetch", event => {
         // or whatever your app's URL is
         event.respondWith(
             fetch(event.request).catch(err =>
-                self.cache.open(cache_name).then(cache => cache.match("/index.php"))
+                self.cache.open(cache_name).then(cache => cache.match("index.php"))
             )
         );
     } else {
