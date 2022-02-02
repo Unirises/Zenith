@@ -1,9 +1,9 @@
 let cache_name = "SimiCart"; // The string used to identify our cache
 const ASSETS = [
-    "/assets/css/style.css",
-    "/assets/js/zenith.js",
-    "/index.php",
-    "/"
+    "./zenith/assets/css/style.css",
+    "./zenith/assets/js/zenith.js",
+    "./zenith/index.php",
+    "./zenith"
 ];
 self.addEventListener("install", event => {
     console.log("installing...");
