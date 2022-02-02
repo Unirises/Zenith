@@ -23,7 +23,10 @@ const CACHE_FILES = [
     '/zenith/assets/img/navigation/selected_home.png',
     '/zenith/assets/img/navigation/selected_immunomodulation.png',
     '/zenith/assets/img/navigation/selected_safety.png',
-    '/zenith/assets/img/navigation/selected_savings.png'
+    '/zenith/assets/img/navigation/selected_savings.png',
+    '/zenith/assets/img/product/confidence.png',
+    '/zenith/assets/img/product/uap_unilab.png',
+    '/zenith/assets/img/product/zenith.png'
 ];
 
 self.addEventListener('install', event => {
