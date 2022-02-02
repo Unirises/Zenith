@@ -1,6 +1,7 @@
 const CACHE_NAME = 'webapp-v1';
 const CACHE_FILES = [
     '/',
+    '/assets/css/style.css'
 ];
 
 self.addEventListener('install', event => {
