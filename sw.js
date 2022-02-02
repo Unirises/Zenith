@@ -1,6 +1,7 @@
 const CACHE_NAME = 'webapp-v1';
 const CACHE_FILES = [
-    '/zenith/index.php'
+    '/zenith/index.php',
+    '/zenith/assets/js/zenith.js'
 ];
 
 self.addEventListener('install', event => {
