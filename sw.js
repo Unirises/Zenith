@@ -4,6 +4,7 @@ const CACHE_FILES = [
     '/zenith/assets/css/style.css',
     '/zenith/assets/js/zenith.js',
     '/zenith/pages/navigation.php',
+    '/zenith/pages/navigation.php',
     '/zenith/pages/p1.php',
     '/zenith/pages/p2.php',
     '/zenith/pages/p3.php',

@@ -14,8 +14,13 @@
 </head>
 
 <body class="background">
-    <div class="full-height">
-    <?php include 'pages/passcode.php'; ?>
+    <div class="full-height" style="display: flex;
+  justify-content: center;
+  align-items: center;" id="d_pc">
+        <label class="h3 text-center" style="color:white;">USE A COMPUTER FOR BETTER EXPERIENCE</label>
+    </div>
+    <div class="full-height d-none" id="gameMode">
+        <?php include 'pages/passcode.php'; ?>
         <?php include 'pages/p1.php'; ?>
         <?php include 'pages/p2.php'; ?>
         <?php include 'pages/p3.php'; ?>
@@ -31,9 +36,9 @@
     <script src="assets/js/zenith.js"></script>
     <script src="./assets/js/index.js" type="module"></script>
 
-    
 
-    
+
+
 </body>
 
 </html>

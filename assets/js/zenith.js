@@ -2,6 +2,13 @@ $(document).ready(function() {
     $('#referenceShow').hide();
     var referencesStatus = 0;
 
+    if ($(window).width() < 481) {
+        $(".background").css({ "background-image": "none", "background-color": "#D12E2D" });
+    } else {
+        $('#d_pc').addClass('d-none');
+        $('#gameMode').removeClass('d-none');
+    }
+
 
     $('#passcodeBtn').click(function() {
         var p = $('#passcodeInput').val();
