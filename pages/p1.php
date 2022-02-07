@@ -1,4 +1,4 @@
-<div class="" id="p1">
+<div class="d-none" id="p1">
     <div class="col-sm-12 mt-4 ml-3">
         <img src="assets/img/product/uap_unilab.png" alt="">
     </div>

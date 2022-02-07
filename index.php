@@ -15,6 +15,7 @@
 
 <body class="background">
     <div class="full-height">
+    <?php include 'pages/passcode.php'; ?>
         <?php include 'pages/p1.php'; ?>
         <?php include 'pages/p2.php'; ?>
         <?php include 'pages/p3.php'; ?>

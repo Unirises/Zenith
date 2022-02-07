@@ -1,4 +1,4 @@
-<div>
+<div class="d-none" id="navigation_bar">
 
     <div style="position: absolute; bottom:-0%; display:none;" id="referenceShow">
         <img src="assets/img/resources/efficacy/Efficacy-References.png" id="references_change" style="width: 100%;">

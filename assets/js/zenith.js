@@ -1,6 +1,21 @@
 $(document).ready(function() {
     $('#referenceShow').hide();
     var referencesStatus = 0;
+
+
+    $('#passcodeBtn').click(function() {
+        var p = $('#passcodeInput').val();
+        if (p == "123") {
+            $('#navigation_bar').removeClass('d-none');
+            $('#p1').removeClass('d-none');
+            $('#passcode').addClass('d-none');
+        } else {
+            alert('Passcode Incorrect');
+        }
+    })
+
+
+
     $('#home').click(function() {
         resetNavigator();
         $(this).attr('src', 'assets/img/navigation/selected_home.png');
