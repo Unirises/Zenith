@@ -44,6 +44,10 @@
     }
     /* Page 2 */
     
+    .cursor_pointer:hover {
+        cursor: pointer;
+    }
+    
     .efficacy_title {
         width: 50%;
         margin-left: 5%;

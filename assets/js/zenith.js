@@ -118,7 +118,25 @@ $(document).ready(function() {
 
     // f
 
+    $('#OutpatientShow').click(function() {
+        $(this).addClass('d-none');
+        $('#OutpatientBtn').removeClass('d-none');
+    })
 
+    $('#ChronicShow').click(function() {
+        $(this).addClass('d-none');
+        $('#ChronicBtn').removeClass('d-none');
+    })
+
+    $('#InpatientShow').click(function() {
+        $(this).addClass('d-none');
+        $('#InpatientBtn').removeClass('d-none');
+    })
+
+    $('#AsthmaShow').click(function() {
+        $(this).addClass('d-none');
+        $('#AsthmaBtn').removeClass('d-none');
+    })
 
     $('#OutpatientBtn').click(function() {
         $('#OutpatientShow').removeClass('d-none');
