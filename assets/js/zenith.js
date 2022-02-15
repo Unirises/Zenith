@@ -25,6 +25,7 @@ $(document).ready(function() {
 
     $('#home').click(function() {
         resetNavigator();
+        $(this).removeClass('opacity_hover');
         $(this).attr('src', 'assets/img/navigation/selected_home.png');
         $(this).css({ "width": "140%" }).addClass('selected_nav');
         $('.background').css({ "background-image": "url('assets/img/bg/bg1.png')" }).addClass('selected_nav');
@@ -36,6 +37,7 @@ $(document).ready(function() {
     });
     $('#efficacy').click(function() {
         resetNavigator();
+        $(this).removeClass('opacity_hover');
         $(this).attr('src', 'assets/img/navigation/selected_efficacy.png');
         $(this).css({ "margin-left": "-20%", "width": "140%" }).addClass('selected_nav');
         $('#references_change').attr('src', 'assets/img/resources/efficacy/Efficacy-References.png')
@@ -48,6 +50,7 @@ $(document).ready(function() {
     });
     $('#dosing').click(function() {
         resetNavigator();
+        $(this).removeClass('opacity_hover');
         $(this).attr('src', 'assets/img/navigation/selected_dosage.png');
         $(this).css({ "margin-left": "-20%", "width": "140%" }).addClass('selected_nav');
         $('#references_change').attr('src', 'assets/img/resources/dosage/Dosage-References.png')
@@ -60,6 +63,7 @@ $(document).ready(function() {
     });
     $('#safety').click(function() {
         resetNavigator();
+        $(this).removeClass('opacity_hover');
         $(this).attr('src', 'assets/img/navigation/selected_safety.png');
         $(this).css({ "margin-left": "-20%", "width": "140%" }).addClass('selected_nav');
         $('#references_change').attr('src', 'assets/img/resources/safety/Safety-References.png')
@@ -72,6 +76,7 @@ $(document).ready(function() {
     });
     $('#immuno').click(function() {
         resetNavigator();
+        $(this).removeClass('opacity_hover');
         $(this).attr('src', 'assets/img/navigation/selected_immunomodulation.png');
         $(this).css({ "margin-left": "-20%", "width": "140%" }).addClass('selected_nav');
         $('#references_change').attr('src', 'assets/img/resources/immo/Immunomodulation-References.png')
@@ -84,6 +89,7 @@ $(document).ready(function() {
     });
     $('#saving').click(function() {
         resetNavigator();
+        $(this).removeClass('opacity_hover');
         $(this).attr('src', 'assets/img/navigation/selected_savings.png');
         $(this).css({ "margin-left": "-17%", "width": "140%" }).addClass('selected_nav');
         $('.background').css({ "background-image": "url('assets/img/bg/bg3.png')" });
@@ -238,12 +244,12 @@ $(document).ready(function() {
     }
 
     function resetNavigator() {
-        $('#home').attr('src', 'assets/img/navigation/Home.png').removeClass('selected_nav').css({ "width": "100%" });
-        $('#efficacy').attr('src', 'assets/img/navigation/Efficacy.png').removeClass('selected_nav').css({ "margin-left": "0%", "width": "100%" });
-        $('#dosing').attr('src', 'assets/img/navigation/Dosing.png').removeClass('selected_nav').css({ "margin-left": "0%", "width": "100%" });
-        $('#safety').attr('src', 'assets/img/navigation/Safety.png').removeClass('selected_nav').css({ "margin-left": "0%", "width": "100%" });
-        $('#immuno').attr('src', 'assets/img/navigation/Immunomodulation.png').removeClass('selected_nav').css({ "margin-left": "0%", "width": "100%" });
-        $('#saving').attr('src', 'assets/img/navigation/Savings.png').removeClass('selected_nav').css({ "margin-left": "0%", "width": "100%" });
+        $('#home').attr('src', 'assets/img/navigation/Home.png').removeClass('selected_nav').css({ "width": "100%" }).addClass('opacity_hover');
+        $('#efficacy').attr('src', 'assets/img/navigation/Efficacy.png').removeClass('selected_nav').css({ "margin-left": "0%", "width": "100%" }).addClass('opacity_hover');
+        $('#dosing').attr('src', 'assets/img/navigation/Dosing.png').removeClass('selected_nav').css({ "margin-left": "0%", "width": "100%" }).addClass('opacity_hover');
+        $('#safety').attr('src', 'assets/img/navigation/Safety.png').removeClass('selected_nav').css({ "margin-left": "0%", "width": "100%" }).addClass('opacity_hover');
+        $('#immuno').attr('src', 'assets/img/navigation/Immunomodulation.png').removeClass('selected_nav').css({ "margin-left": "0%", "width": "100%" }).addClass('opacity_hover');
+        $('#saving').attr('src', 'assets/img/navigation/Savings.png').removeClass('selected_nav').css({ "margin-left": "0%", "width": "100%" }).addClass('opacity_hover');
     }
 
 

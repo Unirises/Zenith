@@ -82,3 +82,44 @@
         margin-top: 10%;
         margin-left: 5%;
     }
+    /* hover */
+    
+    .t_hover {
+        transition: 1s;
+    }
+    
+    .t_hover:hover {
+        margin-top: -10px;
+        transition: 1s;
+    }
+    /* add css */
+    
+    .t_10 {
+        margin-top: 10%;
+        width: 100%;
+        transition: 1s;
+    }
+    
+    .t_10:hover {
+        margin-top: -5%;
+        transition: 1s;
+    }
+    
+    .w_100:hover {
+        margin-top: -5%;
+        transition: 1s;
+    }
+    
+    .w_100 {
+        transition: 1s;
+        width: 100%;
+    }
+    
+    .opacity_hover {
+        opacity: .7;
+    }
+    
+    .opacity_hover:hover {
+        opacity: 1;
+        transition: 1s;
+    }
