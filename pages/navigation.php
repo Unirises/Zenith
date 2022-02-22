@@ -1,10 +1,10 @@
-<div class="d-none" id="navigation_bar">
+<div class="d-none" id="navigation_bar" style="z-index: 1000;">
 
-    <div style="position: absolute; bottom:-0%; display:none;" id="referenceShow">
+    <div style="position: absolute; bottom:-0%; display:none; z-index:1000;" id="referenceShow">
         <img src="assets/img/resources/efficacy/Efficacy-References.png" id="references_change" style="width: 100%;">
     </div>
 
-    <div class="row navigation_bottom">
+    <div class="row navigation_bottom" style="z-index:1000;">
         <div class="col-sm-2">
             <div>
                 <img src="assets/img/resources/references.png" id="referencesBtn" class="d-none" style="width: 100%; margin-bottom:15%;">

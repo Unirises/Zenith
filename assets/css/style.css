@@ -123,3 +123,18 @@
         opacity: 1;
         transition: 1s;
     }
+    /* p3 */
+    
+    .p3_image1 {
+        position: absolute;
+    }
+    
+    .p3_image2 {
+        position: absolute;
+    }
+    
+    .p3_image3 {
+        position: absolute;
+        height: 400px;
+        width: 100%;
+    }
