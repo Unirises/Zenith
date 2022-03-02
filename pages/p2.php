@@ -37,7 +37,7 @@
 
     <div id="selected_image_Show" class="d-none">
         <div class="col-sm-12 animate__animated animate__fadeIn" style="margin-left:15%;">
-            <div style="margin-top: 5%;" class="col-sm-9" id="">
+            <div style="margin-top: 5%;" class="col-sm-9" id="backTo4selector">
                 <img src="assets/img/resources/efficacy/Chronic-Respiratory-Photo.png" id="triangle_image" class="C_A" alt="">
                 <img src="assets/img/resources/efficacy/Chronic-Respiratory-Description.png" id="info_image" class="C_A_Desc" alt="">
             </div>

@@ -22,6 +22,11 @@ $(document).ready(function() {
     })
 
 
+    $('#backTo4selector').click(function() {
+        $('#p2_first').removeClass('d-none');
+        $('#selected_image_Show').addClass('d-none');
+    })
+
 
     $('#home').click(function() {
         resetNavigator();
@@ -229,39 +234,87 @@ $(document).ready(function() {
 
     // p3
 
+    var for_pneumoniaBtn = 0;
+    var better_than_10_daysBtn = 0;
+    var co_amoxiclavBtn = 0;
+
     $('#for_pneumoniaBtn').click(function() {
-        $('#for_pneumoniaBtn').attr('src', 'assets/img/resources/dosage/for_pneumonia.png').css({ "width": "45%" });
-        $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({ "width": "60%" });
-        $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({ "width": "78%" });
-        $(this).attr('src', 'assets/img/resources/dosage/For_Pneumonia_Show.png').css({ "width": "35%" });
-        $('#p3_trans1').css({ "transform": "scaleY(1.5)", "z-index": "1000", "margin-left": "-50%" });
-        $('#p3_trans2').removeAttr("style");
-        $('#p3_trans3').removeAttr("style");
+        if (for_pneumoniaBtn == 0) {
+            $('#for_pneumoniaBtn').attr('src', 'assets/img/resources/dosage/for_pneumonia.png').css({ "width": "45%" });
+            $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({ "width": "60%" });
+            $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({ "width": "78%" });
+            $(this).attr('src', 'assets/img/resources/dosage/For_Pneumonia_Show.png').css({ "width": "35%" });
+            $('#p3_trans1').css({ "transform": "scaleY(1.5)", "z-index": "1000", "margin-left": "-50%" });
+            $('#p3_trans2').removeAttr("style");
+            $('#p3_trans3').removeAttr("style");
+            for_pneumoniaBtn = 1;
+        } else {
+            $('#for_pneumoniaBtn').attr('src', 'assets/img/resources/dosage/for_pneumonia.png').css({ "width": "45%" });
+            $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({ "width": "60%" });
+            $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({ "width": "78%" });
+            $('#p3_trans1').removeAttr("style");
+            $('#p3_trans2').removeAttr("style");
+            $('#p3_trans3').removeAttr("style");
+            for_pneumoniaBtn = 0;
+        }
+
 
     })
 
     $('#better_than_10_daysBtn').click(function() {
-        $('#for_pneumoniaBtn').attr('src', 'assets/img/resources/dosage/for_pneumonia.png').css({ "width": "45%" });
-        $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({ "width": "60%" });
-        $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({ "width": "78%" });
-        $(this).attr('src', 'assets/img/resources/dosage/Better_than_10_Days_Show.png').css({ "width": "45%" });
-        $('#p3_trans2').css({ "transform": "scaleY(1.5)", "z-index": "100", "margin-left": "-50%" });
-        $('#p3_trans1').removeAttr("style");
-        $('#p3_trans3').removeAttr("style");
+        if (better_than_10_daysBtn == 0) {
+            $('#for_pneumoniaBtn').attr('src', 'assets/img/resources/dosage/for_pneumonia.png').css({ "width": "45%" });
+            $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({ "width": "60%" });
+            $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({ "width": "78%" });
+            $(this).attr('src', 'assets/img/resources/dosage/Better_than_10_Days_Show.png').css({ "width": "45%" });
+            $('#p3_trans2').css({ "transform": "scaleY(1.5)", "z-index": "100", "margin-left": "-50%" });
+            $('#p3_trans1').removeAttr("style");
+            $('#p3_trans3').removeAttr("style");
+            better_than_10_daysBtn = 1;
+        } else {
+            $('#for_pneumoniaBtn').attr('src', 'assets/img/resources/dosage/for_pneumonia.png').css({ "width": "45%" });
+            $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({ "width": "60%" });
+            $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({ "width": "78%" });
+            $('#p3_trans1').removeAttr("style");
+            $('#p3_trans2').removeAttr("style");
+            $('#p3_trans3').removeAttr("style");
+            better_than_10_daysBtn = 0;
+        }
+
     })
     $('#co_amoxiclavBtn').click(function() {
-        $('#for_pneumoniaBtn').attr('src', 'assets/img/resources/dosage/for_pneumonia.png').css({ "width": "45%" });
-        $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({ "width": "60%" });
-        $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({ "width": "78%" });
-        $(this).attr('src', 'assets/img/resources/dosage/Co_Amoxiclav_Show.png').css({ "width": "55%" });;
-        $('#p3_trans3').css({ "transform": "scaleY(1.5)", "z-index": "100", "margin-left": "-50%" });
-        $('#p3_trans2').removeAttr("style");
-        $('#p3_trans1').removeAttr("style");
+        if (co_amoxiclavBtn == 0) {
+            $('#for_pneumoniaBtn').attr('src', 'assets/img/resources/dosage/for_pneumonia.png').css({ "width": "45%" });
+            $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({ "width": "60%" });
+            $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({ "width": "78%" });
+            $(this).attr('src', 'assets/img/resources/dosage/Co_Amoxiclav_Show.png').css({ "width": "55%" });;
+            $('#p3_trans3').css({ "transform": "scaleY(1.5)", "z-index": "100", "margin-left": "-50%" });
+            $('#p3_trans2').removeAttr("style");
+            $('#p3_trans1').removeAttr("style");
+            co_amoxiclavBtn = 1;
+        } else {
+            $('#for_pneumoniaBtn').attr('src', 'assets/img/resources/dosage/for_pneumonia.png').css({ "width": "45%" });
+            $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({ "width": "60%" });
+            $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({ "width": "78%" });
+            $('#p3_trans1').removeAttr("style");
+            $('#p3_trans2').removeAttr("style");
+            $('#p3_trans3').removeAttr("style");
+            co_amoxiclavBtn = 0;
+        }
+
     })
 
     // p4
 
     $('#COPD_TreatmentBtn').click(function() {
+        $('#COPD_TreatmentBtn').addClass('t_10');
+        $('#Less_Adverse_EventsBtn').addClass('w_100');
+        $('#Resistant_CoughBtn').addClass('w_100');
+        $('#Severe_AsthmaBtn').addClass('t_10');
+
+
+        $(this).removeClass('t_10').css({ 'width': '100%' });
+
         $('#p4_trans1').removeAttr("style");
         $('#p4_trans2').removeAttr("style");
         $('#p4_trans3').removeAttr("style");
@@ -281,10 +334,18 @@ $(document).ready(function() {
         $('#COPD_TreatmentShow').removeClass('d-none');
 
         $(this).attr('src', 'assets/img/resources/safety/COPD-Treatment-Photo.png');
-        $('#p4_trans1').css({ "transform": "scale(1.4)" });
+        $('#p4_trans1').css({ "transform": "scale(1.1)" });
     })
 
     $('#Less_Adverse_EventsBtn').click(function() {
+        $('#COPD_TreatmentBtn').addClass('t_10');
+        $('#Less_Adverse_EventsBtn').addClass('w_100');
+        $('#Resistant_CoughBtn').addClass('w_100');
+        $('#Severe_AsthmaBtn').addClass('t_10');
+
+
+        $(this).removeClass('w_100').css({ 'width': '100%' });
+
         $('#p4_trans1').removeAttr("style");
         $('#p4_trans2').removeAttr("style");
         $('#p4_trans3').removeAttr("style");
@@ -304,10 +365,18 @@ $(document).ready(function() {
 
         $('#Less_Adverse_EventsShow').removeClass('d-none');
         $(this).attr('src', 'assets/img/resources/safety/Less-Adverse-Events-Photo.png');
-        $('#p4_trans2').css({ "transform": "scale(1.5)" });
+        $('#p4_trans2').css({ "transform": "scale(1.2)" });
     })
 
     $('#Resistant_CoughBtn').click(function() {
+        $('#COPD_TreatmentBtn').addClass('t_10');
+        $('#Less_Adverse_EventsBtn').addClass('w_100');
+        $('#Resistant_CoughBtn').addClass('w_100');
+        $('#Severe_AsthmaBtn').addClass('t_10');
+
+
+        $(this).removeClass('w_100').css({ 'width': '100%' });
+
 
         $('#p4_trans1').removeAttr("style");
         $('#p4_trans2').removeAttr("style");
@@ -326,10 +395,19 @@ $(document).ready(function() {
 
         $('#Resistant_CoughShow').removeClass('d-none');
         $(this).attr('src', 'assets/img/resources/safety/Resistance-Cough-Photo.png');
-        $('#p4_trans3').css({ "transform": "scale(1.5)" });
+        $('#p4_trans3').css({ "transform": "scale(1.2)" });
     })
 
     $('#Severe_AsthmaBtn').click(function() {
+        $('#COPD_TreatmentBtn').addClass('t_10')
+        $('#Less_Adverse_EventsBtn').addClass('w_100');
+        $('#Resistant_CoughBtn').addClass('w_100');
+        $('#Severe_AsthmaBtn').addClass('t_10');
+
+
+        $(this).removeClass('t_10').css({ 'width': '100%' });
+
+
         $('#p4_trans1').removeAttr("style");
         $('#p4_trans2').removeAttr("style");
         $('#p4_trans3').removeAttr("style");
@@ -347,7 +425,7 @@ $(document).ready(function() {
 
         $('#Severe_AsthmaShow').removeClass('d-none');
         $(this).attr('src', 'assets/img/resources/safety/Severe-Asthma-Photo.png');
-        $('#p4_trans4').css({ "transform": "scale(1.4)" });
+        $('#p4_trans4').css({ "transform": "scale(1.1)" });
     })
 
     // p5

@@ -10,7 +10,7 @@
         </div>
         <div class="col-sm-6 text-center">
 
-        <img src="assets/img/resources/savings/Tagline-Experience-Treatment.png" class="animate__animated animate__rotateInDownRight" style="width: 90%;  margin-top:30%;" alt="">
+        <img src="assets/img/resources/savings/Tagline-Experience-Treatment.png" class="animate__animated animate__bounceIn" style="width: 90%;  margin-top:30%;" alt="">
         
 
         </div>
