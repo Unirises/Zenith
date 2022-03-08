@@ -305,164 +305,313 @@ $(document).ready(function() {
     })
 
     // p4
-
+    var COPD_Treatment = 0;
+    var Less_Adverse_Events = 0;
+    var Resistant_Cough = 0;
+    var Severe_Asthma = 0;
     $('#COPD_TreatmentBtn').click(function() {
-        $('#COPD_TreatmentBtn').addClass('t_10');
-        $('#Less_Adverse_EventsBtn').addClass('w_100');
-        $('#Resistant_CoughBtn').addClass('w_100');
-        $('#Severe_AsthmaBtn').addClass('t_10');
+        Less_Adverse_Events = 0;
+        Resistant_Cough = 0;
+        Severe_Asthma = 0;
+        if (COPD_Treatment == 0) {
+            $('#COPD_TreatmentBtn').addClass('t_10');
+            $('#Less_Adverse_EventsBtn').addClass('w_100');
+            $('#Resistant_CoughBtn').addClass('w_100');
+            $('#Severe_AsthmaBtn').addClass('t_10');
 
 
-        $(this).removeClass('t_10').css({ 'width': '100%' });
+            $(this).removeClass('t_10').css({ 'width': '100%' });
 
-        $('#p4_trans1').removeAttr("style");
-        $('#p4_trans2').removeAttr("style");
-        $('#p4_trans3').removeAttr("style");
-        $('#p4_trans4').removeAttr("style");
+            $('#p4_trans1').removeAttr("style");
+            $('#p4_trans2').removeAttr("style");
+            $('#p4_trans3').removeAttr("style");
+            $('#p4_trans4').removeAttr("style");
 
-        $('#COPD_TreatmentBtn').attr('src', 'assets/img/resources/safety/COPD-Treatment.png');
-        $('#Less_Adverse_EventsBtn').attr('src', 'assets/img/resources/safety/Less-Adverse-Events.png');
-        $('#Resistant_CoughBtn').attr('src', 'assets/img/resources/safety/Resistant-Cough.png');
-        $('#Severe_AsthmaBtn').attr('src', 'assets/img/resources/safety/Severe-Asthma.png');
+            $('#COPD_TreatmentBtn').attr('src', 'assets/img/resources/safety/COPD-Treatment.png');
+            $('#Less_Adverse_EventsBtn').attr('src', 'assets/img/resources/safety/Less-Adverse-Events.png');
+            $('#Resistant_CoughBtn').attr('src', 'assets/img/resources/safety/Resistant-Cough.png');
+            $('#Severe_AsthmaBtn').attr('src', 'assets/img/resources/safety/Severe-Asthma.png');
 
 
-        $('#COPD_TreatmentShow').addClass('d-none');
-        $('#Less_Adverse_EventsShow').addClass('d-none');
-        $('#Resistant_CoughShow').addClass('d-none');
-        $('#Severe_AsthmaShow').addClass('d-none');
+            $('#COPD_TreatmentShow').addClass('d-none');
+            $('#Less_Adverse_EventsShow').addClass('d-none');
+            $('#Resistant_CoughShow').addClass('d-none');
+            $('#Severe_AsthmaShow').addClass('d-none');
 
-        $('#COPD_TreatmentShow').removeClass('d-none');
+            $('#COPD_TreatmentShow').removeClass('d-none');
 
-        $(this).attr('src', 'assets/img/resources/safety/COPD-Treatment-Photo.png');
-        $('#p4_trans1').css({ "transform": "scale(1.1)" });
+            $(this).attr('src', 'assets/img/resources/safety/COPD-Treatment-Photo.png');
+            $('#p4_trans1').css({ "transform": "scale(1.1)" });
+            COPD_Treatment = 1;
+        } else {
+            $('#COPD_TreatmentBtn').addClass('t_10');
+            $('#Less_Adverse_EventsBtn').addClass('w_100');
+            $('#Resistant_CoughBtn').addClass('w_100');
+            $('#Severe_AsthmaBtn').addClass('t_10');
+            $('#COPD_TreatmentBtn').attr('src', 'assets/img/resources/safety/COPD-Treatment.png');
+            $('#Less_Adverse_EventsBtn').attr('src', 'assets/img/resources/safety/Less-Adverse-Events.png');
+            $('#Resistant_CoughBtn').attr('src', 'assets/img/resources/safety/Resistant-Cough.png');
+            $('#Severe_AsthmaBtn').attr('src', 'assets/img/resources/safety/Severe-Asthma.png');
+            $('#COPD_TreatmentShow').addClass('d-none');
+            $('#Less_Adverse_EventsShow').addClass('d-none');
+            $('#Resistant_CoughShow').addClass('d-none');
+            $('#Severe_AsthmaShow').addClass('d-none');
+            $('#p4_trans1').removeAttr('style');
+            COPD_Treatment = 0;
+        }
+
     })
 
     $('#Less_Adverse_EventsBtn').click(function() {
-        $('#COPD_TreatmentBtn').addClass('t_10');
-        $('#Less_Adverse_EventsBtn').addClass('w_100');
-        $('#Resistant_CoughBtn').addClass('w_100');
-        $('#Severe_AsthmaBtn').addClass('t_10');
+        COPD_Treatment = 0;
+        Resistant_Cough = 0;
+        Severe_Asthma = 0;
+        if (Less_Adverse_Events == 0) {
+            $('#COPD_TreatmentBtn').addClass('t_10');
+            $('#Less_Adverse_EventsBtn').addClass('w_100');
+            $('#Resistant_CoughBtn').addClass('w_100');
+            $('#Severe_AsthmaBtn').addClass('t_10');
 
 
-        $(this).removeClass('w_100').css({ 'width': '100%' });
+            $(this).removeClass('w_100').css({ 'width': '100%' });
 
-        $('#p4_trans1').removeAttr("style");
-        $('#p4_trans2').removeAttr("style");
-        $('#p4_trans3').removeAttr("style");
-        $('#p4_trans4').removeAttr("style");
+            $('#p4_trans1').removeAttr("style");
+            $('#p4_trans2').removeAttr("style");
+            $('#p4_trans3').removeAttr("style");
+            $('#p4_trans4').removeAttr("style");
 
-        $('#COPD_TreatmentBtn').attr('src', 'assets/img/resources/safety/COPD-Treatment.png');
-        $('#Less_Adverse_EventsBtn').attr('src', 'assets/img/resources/safety/Less-Adverse-Events.png');
-        $('#Resistant_CoughBtn').attr('src', 'assets/img/resources/safety/Resistant-Cough.png');
-        $('#Severe_AsthmaBtn').attr('src', 'assets/img/resources/safety/Severe-Asthma.png');
-
-
-        $('#COPD_TreatmentShow').addClass('d-none');
-        $('#Less_Adverse_EventsShow').addClass('d-none');
-        $('#Resistant_CoughShow').addClass('d-none');
-        $('#Severe_AsthmaShow').addClass('d-none');
+            $('#COPD_TreatmentBtn').attr('src', 'assets/img/resources/safety/COPD-Treatment.png');
+            $('#Less_Adverse_EventsBtn').attr('src', 'assets/img/resources/safety/Less-Adverse-Events.png');
+            $('#Resistant_CoughBtn').attr('src', 'assets/img/resources/safety/Resistant-Cough.png');
+            $('#Severe_AsthmaBtn').attr('src', 'assets/img/resources/safety/Severe-Asthma.png');
 
 
-        $('#Less_Adverse_EventsShow').removeClass('d-none');
-        $(this).attr('src', 'assets/img/resources/safety/Less-Adverse-Events-Photo.png');
-        $('#p4_trans2').css({ "transform": "scale(1.2)" });
+            $('#COPD_TreatmentShow').addClass('d-none');
+            $('#Less_Adverse_EventsShow').addClass('d-none');
+            $('#Resistant_CoughShow').addClass('d-none');
+            $('#Severe_AsthmaShow').addClass('d-none');
+
+
+            $('#Less_Adverse_EventsShow').removeClass('d-none');
+            $(this).attr('src', 'assets/img/resources/safety/Less-Adverse-Events-Photo.png');
+            $('#p4_trans2').css({ "transform": "scale(1.2)" });
+            Less_Adverse_Events = 1;
+        } else {
+            $('#COPD_TreatmentBtn').addClass('t_10');
+            $('#Less_Adverse_EventsBtn').addClass('w_100');
+            $('#Resistant_CoughBtn').addClass('w_100');
+            $('#Severe_AsthmaBtn').addClass('t_10');
+            $('#COPD_TreatmentBtn').attr('src', 'assets/img/resources/safety/COPD-Treatment.png');
+            $('#Less_Adverse_EventsBtn').attr('src', 'assets/img/resources/safety/Less-Adverse-Events.png');
+            $('#Resistant_CoughBtn').attr('src', 'assets/img/resources/safety/Resistant-Cough.png');
+            $('#Severe_AsthmaBtn').attr('src', 'assets/img/resources/safety/Severe-Asthma.png');
+            $('#COPD_TreatmentShow').addClass('d-none');
+            $('#Less_Adverse_EventsShow').addClass('d-none');
+            $('#Resistant_CoughShow').addClass('d-none');
+            $('#Severe_AsthmaShow').addClass('d-none');
+            $('#p4_trans2').removeAttr('style');
+            Less_Adverse_Events = 0;
+        }
+
     })
 
     $('#Resistant_CoughBtn').click(function() {
-        $('#COPD_TreatmentBtn').addClass('t_10');
-        $('#Less_Adverse_EventsBtn').addClass('w_100');
-        $('#Resistant_CoughBtn').addClass('w_100');
-        $('#Severe_AsthmaBtn').addClass('t_10');
+        COPD_Treatment = 0;
+        Less_Adverse_Events = 0;
+        Severe_Asthma = 0;
+        if (Resistant_Cough == 0) {
+            $('#COPD_TreatmentBtn').addClass('t_10');
+            $('#Less_Adverse_EventsBtn').addClass('w_100');
+            $('#Resistant_CoughBtn').addClass('w_100');
+            $('#Severe_AsthmaBtn').addClass('t_10');
 
 
-        $(this).removeClass('w_100').css({ 'width': '100%' });
+            $(this).removeClass('w_100').css({ 'width': '100%' });
 
 
-        $('#p4_trans1').removeAttr("style");
-        $('#p4_trans2').removeAttr("style");
-        $('#p4_trans3').removeAttr("style");
-        $('#p4_trans4').removeAttr("style");
+            $('#p4_trans1').removeAttr("style");
+            $('#p4_trans2').removeAttr("style");
+            $('#p4_trans3').removeAttr("style");
+            $('#p4_trans4').removeAttr("style");
 
-        $('#COPD_TreatmentBtn').attr('src', 'assets/img/resources/safety/COPD-Treatment.png');
-        $('#Less_Adverse_EventsBtn').attr('src', 'assets/img/resources/safety/Less-Adverse-Events.png');
-        $('#Resistant_CoughBtn').attr('src', 'assets/img/resources/safety/Resistant-Cough.png');
-        $('#Severe_AsthmaBtn').attr('src', 'assets/img/resources/safety/Severe-Asthma.png');
+            $('#COPD_TreatmentBtn').attr('src', 'assets/img/resources/safety/COPD-Treatment.png');
+            $('#Less_Adverse_EventsBtn').attr('src', 'assets/img/resources/safety/Less-Adverse-Events.png');
+            $('#Resistant_CoughBtn').attr('src', 'assets/img/resources/safety/Resistant-Cough.png');
+            $('#Severe_AsthmaBtn').attr('src', 'assets/img/resources/safety/Severe-Asthma.png');
 
-        $('#COPD_TreatmentShow').addClass('d-none');
-        $('#Less_Adverse_EventsShow').addClass('d-none');
-        $('#Resistant_CoughShow').addClass('d-none');
-        $('#Severe_AsthmaShow').addClass('d-none');
+            $('#COPD_TreatmentShow').addClass('d-none');
+            $('#Less_Adverse_EventsShow').addClass('d-none');
+            $('#Resistant_CoughShow').addClass('d-none');
+            $('#Severe_AsthmaShow').addClass('d-none');
 
-        $('#Resistant_CoughShow').removeClass('d-none');
-        $(this).attr('src', 'assets/img/resources/safety/Resistance-Cough-Photo.png');
-        $('#p4_trans3').css({ "transform": "scale(1.2)" });
+            $('#Resistant_CoughShow').removeClass('d-none');
+            $(this).attr('src', 'assets/img/resources/safety/Resistance-Cough-Photo.png');
+            $('#p4_trans3').css({ "transform": "scale(1.2)" });
+            Resistant_Cough = 1;
+        } else {
+            $('#COPD_TreatmentBtn').addClass('t_10');
+            $('#Less_Adverse_EventsBtn').addClass('w_100');
+            $('#Resistant_CoughBtn').addClass('w_100');
+            $('#Severe_AsthmaBtn').addClass('t_10');
+            $('#COPD_TreatmentBtn').attr('src', 'assets/img/resources/safety/COPD-Treatment.png');
+            $('#Less_Adverse_EventsBtn').attr('src', 'assets/img/resources/safety/Less-Adverse-Events.png');
+            $('#Resistant_CoughBtn').attr('src', 'assets/img/resources/safety/Resistant-Cough.png');
+            $('#Severe_AsthmaBtn').attr('src', 'assets/img/resources/safety/Severe-Asthma.png');
+            $('#COPD_TreatmentShow').addClass('d-none');
+            $('#Less_Adverse_EventsShow').addClass('d-none');
+            $('#Resistant_CoughShow').addClass('d-none');
+            $('#Severe_AsthmaShow').addClass('d-none');
+            $('#p4_trans3').removeAttr('style');
+            Resistant_Cough = 0;
+        }
+
     })
 
     $('#Severe_AsthmaBtn').click(function() {
-        $('#COPD_TreatmentBtn').addClass('t_10')
-        $('#Less_Adverse_EventsBtn').addClass('w_100');
-        $('#Resistant_CoughBtn').addClass('w_100');
-        $('#Severe_AsthmaBtn').addClass('t_10');
+        COPD_Treatment = 0;
+        Less_Adverse_Events = 0;
+        Resistant_Cough = 0;
+        if (Severe_Asthma == 0) {
+            $('#COPD_TreatmentBtn').addClass('t_10')
+            $('#Less_Adverse_EventsBtn').addClass('w_100');
+            $('#Resistant_CoughBtn').addClass('w_100');
+            $('#Severe_AsthmaBtn').addClass('t_10');
 
 
-        $(this).removeClass('t_10').css({ 'width': '100%' });
+            $(this).removeClass('t_10').css({ 'width': '100%' });
 
 
-        $('#p4_trans1').removeAttr("style");
-        $('#p4_trans2').removeAttr("style");
-        $('#p4_trans3').removeAttr("style");
-        $('#p4_trans4').removeAttr("style");
+            $('#p4_trans1').removeAttr("style");
+            $('#p4_trans2').removeAttr("style");
+            $('#p4_trans3').removeAttr("style");
+            $('#p4_trans4').removeAttr("style");
 
-        $('#COPD_TreatmentBtn').attr('src', 'assets/img/resources/safety/COPD-Treatment.png');
-        $('#Less_Adverse_EventsBtn').attr('src', 'assets/img/resources/safety/Less-Adverse-Events.png');
-        $('#Resistant_CoughBtn').attr('src', 'assets/img/resources/safety/Resistant-Cough.png');
-        $('#Severe_AsthmaBtn').attr('src', 'assets/img/resources/safety/Severe-Asthma.png');
+            $('#COPD_TreatmentBtn').attr('src', 'assets/img/resources/safety/COPD-Treatment.png');
+            $('#Less_Adverse_EventsBtn').attr('src', 'assets/img/resources/safety/Less-Adverse-Events.png');
+            $('#Resistant_CoughBtn').attr('src', 'assets/img/resources/safety/Resistant-Cough.png');
+            $('#Severe_AsthmaBtn').attr('src', 'assets/img/resources/safety/Severe-Asthma.png');
 
-        $('#COPD_TreatmentShow').addClass('d-none');
-        $('#Less_Adverse_EventsShow').addClass('d-none');
-        $('#Resistant_CoughShow').addClass('d-none');
-        $('#Severe_AsthmaShow').addClass('d-none');
+            $('#COPD_TreatmentShow').addClass('d-none');
+            $('#Less_Adverse_EventsShow').addClass('d-none');
+            $('#Resistant_CoughShow').addClass('d-none');
+            $('#Severe_AsthmaShow').addClass('d-none');
 
-        $('#Severe_AsthmaShow').removeClass('d-none');
-        $(this).attr('src', 'assets/img/resources/safety/Severe-Asthma-Photo.png');
-        $('#p4_trans4').css({ "transform": "scale(1.1)" });
+            $('#Severe_AsthmaShow').removeClass('d-none');
+            $(this).attr('src', 'assets/img/resources/safety/Severe-Asthma-Photo.png');
+            $('#p4_trans4').css({ "transform": "scale(1.1)" });
+            Severe_Asthma = 1;
+        } else {
+            $('#COPD_TreatmentBtn').addClass('t_10');
+            $('#Less_Adverse_EventsBtn').addClass('w_100');
+            $('#Resistant_CoughBtn').addClass('w_100');
+            $('#Severe_AsthmaBtn').addClass('t_10');
+            $('#COPD_TreatmentBtn').attr('src', 'assets/img/resources/safety/COPD-Treatment.png');
+            $('#Less_Adverse_EventsBtn').attr('src', 'assets/img/resources/safety/Less-Adverse-Events.png');
+            $('#Resistant_CoughBtn').attr('src', 'assets/img/resources/safety/Resistant-Cough.png');
+            $('#Severe_AsthmaBtn').attr('src', 'assets/img/resources/safety/Severe-Asthma.png');
+            $('#COPD_TreatmentShow').addClass('d-none');
+            $('#Less_Adverse_EventsShow').addClass('d-none');
+            $('#Resistant_CoughShow').addClass('d-none');
+            $('#Severe_AsthmaShow').addClass('d-none');
+            $('#p4_trans4').removeAttr('style');
+            Severe_Asthma = 0;
+        }
+
     })
 
     // p5
 
-    $('#Promising_ImmunomodulatoryBtn').click(function() {
-        $('#Promising_ImmunomodulatoryShow').attr('src', 'assets/img/resources/immo/Promising-Immunomodulatory-Text.png').css({ "width": "60%" });
-        $('#Inhibits_MobilityShow').attr('src', 'assets/img/resources/immo/Inhibits-Mobility-and-Quorum-Sensing-Text.png').css({ "width": "60%" });
-        $('#Reduces_SerumBtnShow').attr('src', 'assets/img/resources/immo/Reduces-Serum-Concentrations-Text.png').css({ "width": "63%" });
-        $('#Promotes_ResolutionShow').attr('src', 'assets/img/resources/immo/Promotes-Resolution-Text.png').css({ "width": "60%" });
+    var Promising_Immunomodulatory = 0;
+    var Inhibits_Mobility = 0;
+    var Reduces_Serum = 0;
+    var Promotes_Resolution = 0;
 
-        $('#Promising_ImmunomodulatoryShow').attr('src', 'assets/img/resources/immo/Promising-Immunomodulatory-Text2.png').css({ "width": "72%" });
+    $('#Promising_ImmunomodulatoryBtn').click(function() {
+        Inhibits_Mobility = 0;
+        Reduces_Serum = 0;
+        Promotes_Resolution = 0;
+        if (Promising_Immunomodulatory == 0) {
+            $('#Promising_ImmunomodulatoryShow').attr('src', 'assets/img/resources/immo/Promising-Immunomodulatory-Text.png').css({ "width": "60%" });
+            $('#Inhibits_MobilityShow').attr('src', 'assets/img/resources/immo/Inhibits-Mobility-and-Quorum-Sensing-Text.png').css({ "width": "60%" });
+            $('#Reduces_SerumBtnShow').attr('src', 'assets/img/resources/immo/Reduces-Serum-Concentrations-Text.png').css({ "width": "63%" });
+            $('#Promotes_ResolutionShow').attr('src', 'assets/img/resources/immo/Promotes-Resolution-Text.png').css({ "width": "60%" });
+
+
+            $('#Promising_ImmunomodulatoryShow').attr('src', 'assets/img/resources/immo/Promising-Immunomodulatory-Text2.png').css({ "width": "72%" });
+            Promising_Immunomodulatory = 1;
+        } else {
+            $('#Promising_ImmunomodulatoryShow').attr('src', 'assets/img/resources/immo/Promising-Immunomodulatory-Text.png').css({ "width": "60%" });
+            $('#Inhibits_MobilityShow').attr('src', 'assets/img/resources/immo/Inhibits-Mobility-and-Quorum-Sensing-Text.png').css({ "width": "60%" });
+            $('#Reduces_SerumBtnShow').attr('src', 'assets/img/resources/immo/Reduces-Serum-Concentrations-Text.png').css({ "width": "63%" });
+            $('#Promotes_ResolutionShow').attr('src', 'assets/img/resources/immo/Promotes-Resolution-Text.png').css({ "width": "60%" });
+            Promising_Immunomodulatory = 0;
+        }
+
     })
 
     $('#Inhibits_MobilityBtn').click(function() {
-        $('#Promising_ImmunomodulatoryShow').attr('src', 'assets/img/resources/immo/Promising-Immunomodulatory-Text.png').css({ "width": "60%" });
-        $('#Inhibits_MobilityShow').attr('src', 'assets/img/resources/immo/Inhibits-Mobility-and-Quorum-Sensing-Text.png').css({ "width": "60%" });
-        $('#Reduces_SerumBtnShow').attr('src', 'assets/img/resources/immo/Reduces-Serum-Concentrations-Text.png').css({ "width": "63%" });
-        $('#Promotes_ResolutionShow').attr('src', 'assets/img/resources/immo/Promotes-Resolution-Text.png').css({ "width": "60%" });
+        Promising_Immunomodulatory = 0;
+        Reduces_Serum = 0;
+        Promotes_Resolution = 0;
+        if (Inhibits_Mobility == 0) {
+            $('#Promising_ImmunomodulatoryShow').attr('src', 'assets/img/resources/immo/Promising-Immunomodulatory-Text.png').css({ "width": "60%" });
+            $('#Inhibits_MobilityShow').attr('src', 'assets/img/resources/immo/Inhibits-Mobility-and-Quorum-Sensing-Text.png').css({ "width": "60%" });
+            $('#Reduces_SerumBtnShow').attr('src', 'assets/img/resources/immo/Reduces-Serum-Concentrations-Text.png').css({ "width": "63%" });
+            $('#Promotes_ResolutionShow').attr('src', 'assets/img/resources/immo/Promotes-Resolution-Text.png').css({ "width": "60%" });
 
-        $('#Inhibits_MobilityShow').attr('src', 'assets/img/resources/immo/Inhibits-Mobility-and-Quorum-Sensing-Text2.png').css({ "width": "72%" });
+            $('#Inhibits_MobilityShow').attr('src', 'assets/img/resources/immo/Inhibits-Mobility-and-Quorum-Sensing-Text2.png').css({ "width": "72%" });
+            Inhibits_Mobility = 1;
+        } else {
+            $('#Promising_ImmunomodulatoryShow').attr('src', 'assets/img/resources/immo/Promising-Immunomodulatory-Text.png').css({ "width": "60%" });
+            $('#Inhibits_MobilityShow').attr('src', 'assets/img/resources/immo/Inhibits-Mobility-and-Quorum-Sensing-Text.png').css({ "width": "60%" });
+            $('#Reduces_SerumBtnShow').attr('src', 'assets/img/resources/immo/Reduces-Serum-Concentrations-Text.png').css({ "width": "63%" });
+            $('#Promotes_ResolutionShow').attr('src', 'assets/img/resources/immo/Promotes-Resolution-Text.png').css({ "width": "60%" });
+            Inhibits_Mobility = 0;
+        }
+
     })
 
     $('#Reduces_SerumBtn').click(function() {
-        $('#Promising_ImmunomodulatoryShow').attr('src', 'assets/img/resources/immo/Promising-Immunomodulatory-Text.png').css({ "width": "60%" });
-        $('#Inhibits_MobilityShow').attr('src', 'assets/img/resources/immo/Inhibits-Mobility-and-Quorum-Sensing-Text.png').css({ "width": "60%" });
-        $('#Reduces_SerumBtnShow').attr('src', 'assets/img/resources/immo/Reduces-Serum-Concentrations-Text.png').css({ "width": "63%" });
-        $('#Promotes_ResolutionShow').attr('src', 'assets/img/resources/immo/Promotes-Resolution-Text.png').css({ "width": "60%" });
+        Promising_Immunomodulatory = 0;
+        Inhibits_Mobility = 0;
+        Promotes_Resolution = 0;
+        if (Reduces_Serum == 0) {
+            $('#Promising_ImmunomodulatoryShow').attr('src', 'assets/img/resources/immo/Promising-Immunomodulatory-Text.png').css({ "width": "60%" });
+            $('#Inhibits_MobilityShow').attr('src', 'assets/img/resources/immo/Inhibits-Mobility-and-Quorum-Sensing-Text.png').css({ "width": "60%" });
+            $('#Reduces_SerumBtnShow').attr('src', 'assets/img/resources/immo/Reduces-Serum-Concentrations-Text.png').css({ "width": "63%" });
+            $('#Promotes_ResolutionShow').attr('src', 'assets/img/resources/immo/Promotes-Resolution-Text.png').css({ "width": "60%" });
 
-        $('#Reduces_SerumBtnShow').attr('src', 'assets/img/resources/immo/Reduces-Serum-Concentrations-Text2.png').css({ "width": "72%" });
+            $('#Reduces_SerumBtnShow').attr('src', 'assets/img/resources/immo/Reduces-Serum-Concentrations-Text2.png').css({ "width": "72%" });
+            Reduces_Serum = 1;
+        } else {
+            $('#Promising_ImmunomodulatoryShow').attr('src', 'assets/img/resources/immo/Promising-Immunomodulatory-Text.png').css({ "width": "60%" });
+            $('#Inhibits_MobilityShow').attr('src', 'assets/img/resources/immo/Inhibits-Mobility-and-Quorum-Sensing-Text.png').css({ "width": "60%" });
+            $('#Reduces_SerumBtnShow').attr('src', 'assets/img/resources/immo/Reduces-Serum-Concentrations-Text.png').css({ "width": "63%" });
+            $('#Promotes_ResolutionShow').attr('src', 'assets/img/resources/immo/Promotes-Resolution-Text.png').css({ "width": "60%" });
+            Reduces_Serum = 0;
+        }
+
     })
     $('#Promotes_ResolutionBtn').click(function() {
-        $('#Promising_ImmunomodulatoryShow').attr('src', 'assets/img/resources/immo/Promising-Immunomodulatory-Text.png').css({ "width": "60%" });
-        $('#Inhibits_MobilityShow').attr('src', 'assets/img/resources/immo/Inhibits-Mobility-and-Quorum-Sensing-Text.png').css({ "width": "60%" });
-        $('#Reduces_SerumBtnShow').attr('src', 'assets/img/resources/immo/Reduces-Serum-Concentrations-Text.png').css({ "width": "63%" });
-        $('#Promotes_ResolutionShow').attr('src', 'assets/img/resources/immo/Promotes-Resolution-Text.png').css({ "width": "60%" });
+        Promising_Immunomodulatory = 0;
+        Inhibits_Mobility = 0;
+        Reduces_Serum = 0;
+        if (Promotes_Resolution == 0) {
+            $('#Promising_ImmunomodulatoryShow').attr('src', 'assets/img/resources/immo/Promising-Immunomodulatory-Text.png').css({ "width": "60%" });
+            $('#Inhibits_MobilityShow').attr('src', 'assets/img/resources/immo/Inhibits-Mobility-and-Quorum-Sensing-Text.png').css({ "width": "60%" });
+            $('#Reduces_SerumBtnShow').attr('src', 'assets/img/resources/immo/Reduces-Serum-Concentrations-Text.png').css({ "width": "63%" });
+            $('#Promotes_ResolutionShow').attr('src', 'assets/img/resources/immo/Promotes-Resolution-Text.png').css({ "width": "60%" });
 
-        $('#Promotes_ResolutionShow').attr('src', 'assets/img/resources/immo/Promotes-Resolution-Text2.png').css({ "width": "72%" });
+            $('#Promotes_ResolutionShow').attr('src', 'assets/img/resources/immo/Promotes-Resolution-Text2.png').css({ "width": "72%" });
+            Promotes_Resolution = 1;
+        } else {
+            $('#Promising_ImmunomodulatoryShow').attr('src', 'assets/img/resources/immo/Promising-Immunomodulatory-Text.png').css({ "width": "60%" });
+            $('#Inhibits_MobilityShow').attr('src', 'assets/img/resources/immo/Inhibits-Mobility-and-Quorum-Sensing-Text.png').css({ "width": "60%" });
+            $('#Reduces_SerumBtnShow').attr('src', 'assets/img/resources/immo/Reduces-Serum-Concentrations-Text.png').css({ "width": "63%" });
+            $('#Promotes_ResolutionShow').attr('src', 'assets/img/resources/immo/Promotes-Resolution-Text.png').css({ "width": "60%" });
+            Promotes_Resolution = 0;
+        }
+
     })
 
 
