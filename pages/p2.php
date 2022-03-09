@@ -37,7 +37,7 @@
 
     <div id="selected_image_Show" class="d-none">
         <div class="col-sm-12 animate__animated animate__fadeIn" style="margin-left:15%;">
-            <div style="margin-top: 5%;" class="col-sm-9" id="backTo4selector">
+            <div style="margin-top: 5%; cursor:pointer;" class="col-sm-9" id="backTo4selector">
                 <img src="assets/img/resources/efficacy/Chronic-Respiratory-Photo.png" id="triangle_image" class="C_A" alt="">
                 <img src="assets/img/resources/efficacy/Chronic-Respiratory-Description.png" id="info_image" class="C_A_Desc" alt="">
             </div>
@@ -48,11 +48,11 @@
         <div class="row" style="margin-top: 7%;">
             <div class="col-sm-4 text-right">
                 <img src="assets/img/resources/efficacy/Chronic_Respiratory.png" class="t_hover cursor_pointer animate__animated animate__bounceInUp" id="Selected_Image1" style="width: 70%;" alt="">
-                
+
             </div>
             <div class="col-sm-4 text-center">
                 <img src="assets/img/resources/efficacy/Inpatient.png" class="t_hover cursor_pointer animate__animated animate__bounceInUp" id="Selected_Image2" style="width: 70%;" alt="">
-                
+
             </div>
             <div class="col-sm-4 text-left">
                 <img src="assets/img/resources/efficacy/Asthma.png" id="Selected_Image3" class="t_hover cursor_pointer animate__animated animate__bounceInUp" style="width: 70%;" alt="">
