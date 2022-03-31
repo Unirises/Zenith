@@ -1,7 +1,7 @@
 <div class="d-none" id="p3">
     <div style="position:absolute; top:30%; left:3%; z-index:1000;">
         <img src="assets/img/resources/dosage/dosage-title.png" class="animate__animated animate__fadeInLeft" style="width: 35vw;" alt=""><br>
-        <img src="assets/img/resources/dosage/dosage-sub.png" class="animate__animated animate__fadeInLeft" style="width: 35vw;" alt="">
+        <!-- <img src="assets/img/resources/dosage/dosage-sub.png" class="animate__animated animate__fadeInLeft" style="width: 35vw;" alt=""> -->
     </div>
     <div class="d-flex flex-column text-right">
         <div id="p3_trans1"><img src="assets/img/resources/dosage/for_pneumonia.png" id="for_pneumoniaBtn" class=" cursor_pointer animate__animated animate__fadeInTopRight" style="height:32vh; width:45%;" alt=""></div>
