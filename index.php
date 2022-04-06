@@ -16,6 +16,10 @@
 </head>
 
 <body class="background">
+
+    <div id="preloader">
+
+    </div>
     <div class="full-height" style="display: flex;
   justify-content: center;
   align-items: center;" id="d_pc">
@@ -38,9 +42,13 @@
     <script src="assets/js/zenith.js"></script>
     <script src="./assets/js/index.js" type="module"></script>
 
+    <script>
+        var loader = document.getElementById("preloader");
 
-
-
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+        })
+    </script>
 </body>
 
 </html>
