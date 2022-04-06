@@ -34,7 +34,39 @@
         <?php include 'pages/p5.php'; ?>
         <?php include 'pages/p6.php'; ?>
 
-        <?php include 'pages/navigation.php'; ?>
+        <div class="d-none" id="navigation_bar" style="z-index: 1000;">
+
+            <div style="position: absolute; bottom:-0%; display:none; z-index:1000;" id="referenceShow">
+                <img src="assets/img/resources/efficacy/Efficacy-References.png" id="references_change" style="width: 100%;">
+            </div>
+
+            <div class="row navigation_bottom" style="z-index:1000;">
+                <div class="col-sm-2">
+                    <div>
+                        <img src="assets/img/resources/references.png" id="referencesBtn" class="d-none" style="width: 100%; margin-bottom:15%;">
+                    </div>
+                    <div>
+                        <img src="assets/img/navigation/selected_home.png" id="home" class="align_bottom selected_nav opacity_hover" style="width: 140%;" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <img src="assets/img/navigation/Efficacy.png" id="efficacy" class="align_bottom opacity_hover" style="width:100%;" alt="">
+                </div>
+                <div class="col-sm-2">
+                    <img src="assets/img/navigation/Dosing.png" id="dosing" class="align_bottom opacity_hover" style="width:100%;" alt="">
+                </div>
+                <div class="col-sm-2">
+                    <img src="assets/img/navigation/Safety.png" id="safety" class="align_bottom opacity_hover" style="width:100%;" alt="">
+                </div>
+                <div class="col-sm-2">
+                    <img src="assets/img/navigation/Immunomodulation.png" id="immuno" class="align_bottom opacity_hover" style="width:100%;" alt="">
+                </div>
+                <div class="col-sm-2">
+                    <img src="assets/img/navigation/Savings.png" id="saving" class="align_bottom opacity_hover" style="width:100%;" alt="">
+                </div>
+
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
