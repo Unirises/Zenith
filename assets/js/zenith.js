@@ -97,7 +97,7 @@ $(document).ready(function() {
         $(this).removeClass('opacity_hover');
         $(this).attr('src', 'assets/img/navigation/selected_savings.png');
         $(this).css({ "margin-left": "-17%", "width": "140%" }).addClass('selected_nav');
-        $('#references_change').attr('src', 'assets/img/resources/savings/ref_savings.png')
+        $('#references_change').attr('src', 'assets/img/resources/immo/Immunomodulation-References.png')
         $('.background').css({ "background-image": "url('assets/img/bg/bg3.png')" });
         $('#referencesBtn').removeClass('d-none');
         $('#referenceShow').hide();
@@ -245,7 +245,7 @@ $(document).ready(function() {
             $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({ "width": "60%" });
             $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({ "width": "78%" });
             $(this).attr('src', 'assets/img/resources/dosage/For_Pneumonia_Show.png').css({ "width": "35%" });
-            $('#p3_trans1').css({ "transform": "scaleY(1.5)", "z-index": "1000", "margin-left": "-50%" });
+            $('#p3_trans1').css({ "transform": "scaleY(1.2)", "z-index": "1000", "margin-left": "-50%" });
             $('#p3_trans2').removeAttr("style");
             $('#p3_trans3').removeAttr("style");
             for_pneumoniaBtn = 1;
@@ -268,7 +268,7 @@ $(document).ready(function() {
             $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({ "width": "60%" });
             $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({ "width": "78%" });
             $(this).attr('src', 'assets/img/resources/dosage/Better_than_10_Days_Show.png').css({ "width": "45%" });
-            $('#p3_trans2').css({ "transform": "scaleY(1.5)", "z-index": "100", "margin-left": "-50%" });
+            $('#p3_trans2').css({ "transform": "scaleY(1.2)", "z-index": "100", "margin-left": "-50%" });
             $('#p3_trans1').removeAttr("style");
             $('#p3_trans3').removeAttr("style");
             better_than_10_daysBtn = 1;
@@ -289,7 +289,7 @@ $(document).ready(function() {
             $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({ "width": "60%" });
             $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({ "width": "78%" });
             $(this).attr('src', 'assets/img/resources/dosage/Co_Amoxiclav_Show.png').css({ "width": "55%" });;
-            $('#p3_trans3').css({ "transform": "scaleY(1.5)", "z-index": "100", "margin-left": "-50%" });
+            $('#p3_trans3').css({ "transform": "scaleY(1.2)", "z-index": "100", "margin-left": "-50%" });
             $('#p3_trans2').removeAttr("style");
             $('#p3_trans1').removeAttr("style");
             co_amoxiclavBtn = 1;
