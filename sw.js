@@ -1,4 +1,4 @@
-const CACHE_NAME = 'Zenith-V1';
+const CACHE_NAME = 'Zenithv1';
 const CACHE_FILES = [
     '/zenith/index.php',
     '/zenith/assets/css/style.css',
