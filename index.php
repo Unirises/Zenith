@@ -539,9 +539,9 @@
 
             $('#for_pneumoniaBtn').click(function() {
                 if (for_pneumoniaBtn == 0) {
-                    $('#for_pneumoniaBtn').attr('src', 'assets/img/resources/dosage/for_pneumonia.png').css({
-                        "width": "45%"
-                    });
+                    // $('#for_pneumoniaBtn').attr('src', 'assets/img/resources/dosage/for_pneumonia.png').css({
+                    //     "width": "45%"
+                    // });
                     $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({
                         "width": "60%"
                     });
@@ -583,9 +583,9 @@
                     $('#for_pneumoniaBtn').attr('src', 'assets/img/resources/dosage/for_pneumonia.png').css({
                         "width": "45%"
                     });
-                    $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({
-                        "width": "60%"
-                    });
+                    // $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({
+                    //     "width": "60%"
+                    // });
                     $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({
                         "width": "78%"
                     });
@@ -625,9 +625,9 @@
                     $('#better_than_10_daysBtn').attr('src', 'assets/img/resources/dosage/better_than_10_days.png').css({
                         "width": "60%"
                     });
-                    $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({
-                        "width": "78%"
-                    });
+                    // $('#co_amoxiclavBtn').attr('src', 'assets/img/resources/dosage/co-amoxiclav.png').css({
+                    //     "width": "78%"
+                    // });
                     $(this).attr('src', 'assets/img/resources/dosage/Co_Amoxiclav_Show.png').css({
                         "width": "55%"
                     });;
