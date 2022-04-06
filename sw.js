@@ -1,6 +1,7 @@
 const CACHE_NAME = 'Zenithv1';
 const CACHE_FILES = [
     '/zenith/index.php',
+    '/zenith/sw.js',
     '/zenith/assets/css/style.css',
     '/zenith/assets/js/zenith.js',
     '/zenith/assets/img/uap_logo.png',
