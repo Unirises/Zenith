@@ -97,7 +97,7 @@ $(document).ready(function() {
         $(this).removeClass('opacity_hover');
         $(this).attr('src', 'assets/img/navigation/selected_savings.png');
         $(this).css({ "margin-left": "-17%", "width": "140%" }).addClass('selected_nav');
-        $('#references_change').attr('src', 'assets/img/resources/immo/Immunomodulation-References.png')
+        $('#references_change').attr('src', 'assets/img/resources/savings/ref_savings.png')
         $('.background').css({ "background-image": "url('assets/img/bg/bg3.png')" });
         $('#referencesBtn').removeClass('d-none');
         $('#referenceShow').hide();
